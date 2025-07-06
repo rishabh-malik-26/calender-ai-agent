@@ -21,6 +21,11 @@ app.add_middleware(
 class UserMessage(BaseModel):
     message:str
 
+@app.get("/")
+def read_root():
+    return {"status": "ok"}
+
+
 
 @app.post("/ask")
 async def ask_gemini(msg: UserMessage):
