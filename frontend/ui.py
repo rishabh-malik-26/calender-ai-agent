@@ -8,7 +8,7 @@ st.set_page_config(page_title="AI Calendar Agent", page_icon="📅")
 st.title("📅 AI Calendar Assistant")
 
 # Backend FastAPI URL
-FASTAPI_URL = "http://localhost:8000/ask"
+FASTAPI_URL = "https://calender-ai-agent-2uqh.onrender.com/ask"
 
 st.markdown("""
 Type a message to the AI assistant. Try examples like:
