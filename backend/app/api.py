@@ -1,5 +1,5 @@
 from fastapi  import FastAPI,Body
-from gemini_api import get_agent
+from .gemini_api import get_agent
 from pydantic import BaseModel
 import logging
 logging.basicConfig(level=logging.INFO,format= '%(asctime)s - %(levelname)s - %(message)s')
