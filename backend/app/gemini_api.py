@@ -1,7 +1,7 @@
 import os
 import google.generativeai as genai
-from calender_code import Calendar
-from agent import book_appointment,check_appointment,reschedule_appointment_by_name,list_all_appointments,cancel_appointment_by_name
+from .calender_code import Calendar
+from .agent import book_appointment,check_appointment,reschedule_appointment_by_name,list_all_appointments,cancel_appointment_by_name
 import logging
 logging.basicConfig(level=logging.INFO,format= '%(asctime)s - %(levelname)s - %(message)s')
 from langchain_google_genai import ChatGoogleGenerativeAI
