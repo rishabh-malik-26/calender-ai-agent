@@ -11,3 +11,5 @@ services:
       # Add your secrets here if needed:
       - key: GOOGLE_API_KEY
         sync: false
+      - key: GOOGLE_CREDENTIALS_JSON
+        sync: false
