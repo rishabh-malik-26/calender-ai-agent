@@ -2,7 +2,7 @@ from .calender_code import Calendar,key
 from langchain.tools import tool
 from datetime import datetime, timedelta
 
-from utils import to_rfc3339
+from .utils import to_rfc3339
 import logging
 logging.basicConfig(level=logging.INFO,format= '%(asctime)s - %(levelname)s - %(message)s')
 
