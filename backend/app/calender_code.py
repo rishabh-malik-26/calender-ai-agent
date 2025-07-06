@@ -65,9 +65,12 @@ class Calendar:
         """
         SCOPES = ['https://www.googleapis.com/auth/calendar']
         # Load credentials from environment variable
-        with open("service.json") as f:
-            service_account_info = json.load(f)
-        
+        # with open("service.json") as f:
+        #     service_account_info = json.load(f)
+
+        google_creds_str = os.getenv("GOOGLE_CREDENTIALS_JSON")
+        service_account_info = json.loads(google_creds_str)
+
         credentials = service_account.Credentials.from_service_account_info(
             service_account_info, scopes=SCOPES
         )
