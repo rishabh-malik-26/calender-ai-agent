@@ -16,8 +16,13 @@ def create_calendar(calendar_name: str) -> str:
 
     SCOPES = ['https://www.googleapis.com/auth/calendar']
 
+    google_creds_str = os.getenv("GOOGLE_CREDENTIALS_JSON")
+    google_creds_dict = json.loads(google_creds_str)
+
+
+
     credentials = service_account.Credentials.from_service_account_file(
-        "service.json", scopes=SCOPES)
+        google_creds_dict, scopes=SCOPES)
 
     service = build('calendar', 'v3', credentials=credentials)
 
