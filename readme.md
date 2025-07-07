@@ -1,6 +1,7 @@
 <h1 align="center">📆 Gemini AI Calendar Assistant</h1>
 
 Live Url - https://calender-ai-frontend.onrender.com/
+
 An intelligent calendar assistant that integrates with Google Calendar via API and uses Gemini (Google’s LLM) through LangChain to understand natural language commands like:
 
 “Schedule a meeting with Rahul at 5pm tomorrow”
