@@ -2,6 +2,8 @@
 
 Live Url - https://calender-ai-frontend.onrender.com/
 
+API URL - https://calender-ai-agent-2uqh.onrender.com/
+
 An intelligent calendar assistant that integrates with Google Calendar via API and uses Gemini (Google’s LLM) through LangChain to understand natural language commands like:
 
 “Schedule a meeting with Rahul at 5pm tomorrow”
