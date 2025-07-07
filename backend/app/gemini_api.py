@@ -31,7 +31,9 @@ llm = ChatGoogleGenerativeAI(
     convert_system_message_to_human=True,
 )
 
-prompt_template = """You are a helpful calendar assistant. You can book, list, and cancel appointments.
+prompt_template = """You are an intelligent calendar assistant integrated with Google Calendar via the Google Calendar API.
+Your purpose is to help users manage their calendar events efficiently by performing actions such as creating events, 
+updating events, retrieving specific events, and checking free/busy schedules.
 
 
 You have access to the following tools:
@@ -58,7 +60,6 @@ Important notes:
 Examples:
 - User: "Schedule a meeting" → Ask: "I'd be happy to schedule a meeting for you! Could you please provide the meeting title, date, and time?"
 - User: "Book appointment tomorrow" → Ask: "I can book an appointment for tomorrow. What would you like to call this appointment and what time works for you?"
-- User: "Rescheduly my SEO Meeting to 8th july , and name it as new Seo meeting at 5 pm
 
 Begin!
 
